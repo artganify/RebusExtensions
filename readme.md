@@ -19,7 +19,9 @@ and resolving (especially resolving message handlers) should be separated. :)
 
 #### How to use?
 
-There are to ways to use this extension. The first one is via the Autofac's `IContainerBuilder` and implemented as a
+##### Using IContainerBuilder
+
+There are two ways to use this extension. The first one is via the Autofac's `IContainerBuilder` and implemented as a
 very convenient extension method:
 
     containerBuilder.UseRebus(x =>
@@ -35,6 +37,8 @@ all message handlers within the scope of a provided assembly:
 
     containerBuilder.RegisterMessageHandlers(typeof (Program).Assembly);
 
+##### Using RebusConfigurer
+
 The second way is to just use the standard `RebusConfigurer` and the `AutofacHandlerActivator`. Either like this:
 
     Configure.With(new AutofacHandlerActivator(container))...
@@ -43,6 +47,7 @@ or...
 
     new Configure().WithAutofacActivator(container));
 
-*Please note* that simply provide an adapter for resolving message handlers. They do not register the Rebus bus within Autofac!
 
-For more examples, check out the example project [insert link here]!
+*Please note* that this simply hooks up an adapter for resolving message handlers. They do not register the Rebus bus within Autofac!
+
+For more examples, check out the [example project](https://github.com/artganify/RebusExtensions/tree/master/src/Rebus.Extensions.Autofac.Example)!
