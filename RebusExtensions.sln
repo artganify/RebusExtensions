@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rebus.Extensions.Autofac", "src\Rebus.Extensions.Autofac\Rebus.Extensions.Autofac.csproj", "{F65E4B2E-6C95-440B-A8BE-8AF194052C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rebus.Extensions.Autofac.Example", "src\Rebus.Extensions.Autofac.Example\Rebus.Extensions.Autofac.Example.csproj", "{DB40D59E-9620-41FC-94AC-1F43658C00D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA151E60-B0D8-4D6E-BFB6-A24DD652A154}"
+	ProjectSection(SolutionItems) = preProject
+		changelog.md = changelog.md
+		license = license
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{94BBD45D-31E5-4DAB-9ACE-4EFEAC42EE46}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "spec", "spec", "{1F5B7740-BCC5-48AB-B74B-3B0B345200C5}"
+	ProjectSection(SolutionItems) = preProject
+		spec\Rebus.Extensions.Autofac.nuspec = spec\Rebus.Extensions.Autofac.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{269096FC-C34B-4455-8495-F0F20700296B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F65E4B2E-6C95-440B-A8BE-8AF194052C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65E4B2E-6C95-440B-A8BE-8AF194052C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65E4B2E-6C95-440B-A8BE-8AF194052C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65E4B2E-6C95-440B-A8BE-8AF194052C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94BBD45D-31E5-4DAB-9ACE-4EFEAC42EE46} = {EA151E60-B0D8-4D6E-BFB6-A24DD652A154}
+		{1F5B7740-BCC5-48AB-B74B-3B0B345200C5} = {EA151E60-B0D8-4D6E-BFB6-A24DD652A154}
+		{269096FC-C34B-4455-8495-F0F20700296B} = {EA151E60-B0D8-4D6E-BFB6-A24DD652A154}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Rebus.Extensions.Autofac</id>
+    <version>1.0.0</version>
+    <title>Rebus Autofac Extensions</title>
+    <authors>artganify</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+        Provides Autofac container adapters for Rebus
+    </description>
+    <releaseNotes>
+      Initial release
+    </releaseNotes>
+    <tags>Rebus Autofac Container ContainerBuilder</tags>
+    <iconUrl>https://raw.githubusercontent.com/artganify/RebusExtensions/master/artwork/rebus-autofac-128x128.png</iconUrl>
+    <projectUrl>http://github.com/artganify/RebusExtensions</projectUrl>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" />
+    </frameworkAssemblies>
+    <dependencies>
+        <dependency id="Rebus" version="[0.99.42, 1)" />
+        <dependency id="Autofac" version="[3.5, 4)" />
+    </dependencies>
+  </metadata>
+  <files>
+
+    <!-- net45 -->
+    <file src="..\src\Rebus.Extensions.Autofac\bin\Release\AnyCPU\v4.5\Rebus.Extensions.Autofac.dll" target="lib\net45\Rebus.Extensions.Autofac.dll" />
+    <file src="..\src\Rebus.Extensions.Autofac\bin\Release\AnyCPU\v4.5\Rebus.Extensions.Autofac.pdb" target="lib\net45\Rebus.Extensions.Autofac.pdb" />
+    <file src="..\src\Rebus.Extensions.Autofac\bin\Release\AnyCPU\v4.5\Rebus.Extensions.Autofac.xml" target="lib\net45\Rebus.Extensions.Autofac.xml" />
+  
+    <!-- metadata -->
+    <file src="..\changelog.md"   target="changelog.md" />
+    <file src="..\readme.md"      target="readme.md" />
+    <file src="..\license"        target="license" />
+    
+  </files>
+</package>
