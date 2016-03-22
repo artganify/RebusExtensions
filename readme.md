@@ -35,7 +35,7 @@ This one provides an action delegate for the actual Rebus configuration using th
 the `IBus` is registered as a singleton instance within Autofac. Also, it has an additional extension to automatically register
 all message handlers within the scope of a provided assembly:
 
-    containerBuilder.RegisterMessageHandlers(typeof (Program).Assembly);
+containerBuilder.RegisterMessageHandlers(typeof (Program).Assembly);
 
 ##### Using RebusConfigurer
 
@@ -51,3 +51,30 @@ or...
 *Please note* that this simply hooks up an adapter for resolving message handlers. They do not register the Rebus bus within Autofac!
 
 For more examples, check out the [example project](https://github.com/artganify/RebusExtensions/tree/master/src/Rebus.Extensions.Autofac.Example)!
+
+### Rebus.Extensions.Topshelf
+
+This extension provides a Rebus integration for Topshelf.
+
+#### How to use?
+
+The extension contains various extension methods for both the Topshelf `HostConfigurator` and `ServiceConfigurator<'T>`. E.g...
+
+    HostFactory.Run(host => {
+
+        // provide a IHandlerActivator (later used @ service configurator)
+        host.UsingRebusHandlerActivator(new CustomHandlerActivator());
+
+        // host rebus as the service itself
+        host.UsingRebusAsService(new CustomHandlerActivator, rebus => {
+            rebus.Logging(...)
+        });
+
+        // start a IBus along with the Topshelf service, accessible via RebusService.Bus
+        host.Service<MyService>(service => {
+            service.Rebus(rebus => {
+                rebus.Logging(...);
+            }
+        }
+
+    })

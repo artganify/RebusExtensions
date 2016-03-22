@@ -22,9 +22,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "spec", "spec", "{1F5B7740-BCC5-48AB-B74B-3B0B345200C5}"
 	ProjectSection(SolutionItems) = preProject
 		spec\Rebus.Extensions.Autofac.nuspec = spec\Rebus.Extensions.Autofac.nuspec
+		spec\Rebus.Extensions.Topshelf.nuspec = spec\Rebus.Extensions.Topshelf.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{269096FC-C34B-4455-8495-F0F20700296B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rebus.Extensions.Topshelf", "src\Rebus.Extensions.Topshelf\Rebus.Extensions.Topshelf.csproj", "{B9109739-F19F-486B-A50A-BF002E94EBBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +43,10 @@ Global
 		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB40D59E-9620-41FC-94AC-1F43658C00D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9109739-F19F-486B-A50A-BF002E94EBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9109739-F19F-486B-A50A-BF002E94EBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9109739-F19F-486B-A50A-BF002E94EBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9109739-F19F-486B-A50A-BF002E94EBBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

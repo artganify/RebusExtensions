@@ -5,3 +5,7 @@ All notable changes to this project will be documented in this file. This projec
 ## [1.0.0] - 2016/03/22
 
 * Added Autofac integration
+
+## [1.1.0] - 2016/03/22
+
+* Added Topshelf integration

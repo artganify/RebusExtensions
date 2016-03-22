@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Rebus.Extensions.Topshelf</id>
+    <version>1.0.0</version>
+    <title>Rebus Extensions Topshelf Integration</title>
+    <authors>artganify</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+        Provides a Rebus integration for Topshelf
+    </description>
+    <releaseNotes>
+      Initial release
+    </releaseNotes>
+    <tags>Rebus Extensions Topshelf</tags>
+    <iconUrl>https://raw.githubusercontent.com/artganify/RebusExtensions/master/artwork/rebus-autofac-128x128.png</iconUrl>
+    <projectUrl>http://github.com/artganify/RebusExtensions</projectUrl>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" />
+    </frameworkAssemblies>
+    <dependencies>
+        <dependency id="Rebus" version="[0.99.42, 1)" />
+        <dependency id="Topshelf" version="[3.3.1, 4)" />
+    </dependencies>
+  </metadata>
+  <files>
+
+    <!-- net45 -->
+    <file src="..\src\Rebus.Extensions.Topshelf\bin\Release\AnyCPU\v4.5\Rebus.Extensions.Topshelf.dll" target="lib\net45\Rebus.Extensions.Topshelf.dll" />
+    <file src="..\src\Rebus.Extensions.Topshelf\bin\Release\AnyCPU\v4.5\Rebus.Extensions.Topshelf.pdb" target="lib\net45\Rebus.Extensions.Topshelf.pdb" />
+    <file src="..\src\Rebus.Extensions.Topshelf\bin\Release\AnyCPU\v4.5\Rebus.Extensions.Topshelf.xml" target="lib\net45\Rebus.Extensions.Topshelf.xml" />
+  
+    <!-- metadata -->
+    <file src="..\changelog.md"   target="changelog.md" />
+    <file src="..\readme.md"      target="readme.md" />
+    <file src="..\license"        target="license" />
+    
+  </files>
+</package>
