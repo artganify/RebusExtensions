@@ -9,7 +9,7 @@ The following extensions are available:+1:
 * **Rebus.Extensions.Autofac** - Autofac container integration for Rebus, similar to [Rebus.Autofac](https://github.com/rebus-org/Rebus/tree/master/Rebus.Autofac),
 but following the *RRR* principle as well as separating bus registration from message handler resolving.
 
-* **more to come...**
+* **Rebus.Extensions.Topshelf** - Rebus integration into Topshelf. (Experimental)
 
 ### Rebus.Extensions.Autofac
 
@@ -77,4 +77,4 @@ The extension contains various extension methods for both the Topshelf `HostConf
             }
         }
 
-    })
+    });
